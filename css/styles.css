@@ -161,7 +161,7 @@ img {
     transition: var(--transition);
   }
 
-  .login {
+  .logins {
     align-items: center;
     border-top: 1px solid var(--Very-dark-grayish-blue-body-copy);
     display: flex;
@@ -170,15 +170,12 @@ img {
     padding: 2rem 0 0.5rem;
   }
 
-  .login .btn {
+  .logins .btn {
     background: var(--gradient);
     color: white;
     margin: 1rem 0;
     padding: 1rem 2rem;
-  }
-
-  .login p {
-    cursor: pointer;
+    white-space: nowrap;
   }
 
   .desktop-img {
@@ -194,10 +191,10 @@ img {
   }
 
   .hero {
-    background-attachment: fixed;
-    background-position: -25rem -15rem;
     background: url(../images/bg-pattern-intro-mobile.svg) no-repeat;
     border-bottom-left-radius: 8rem;
+    background-position: -25rem -15rem;
+    background-attachment: fixed;
     inset: 0;
     position: absolute;
     z-index: -11;
@@ -210,6 +207,13 @@ img {
   .arrow-down path {
     stroke: var(--Light-red);
   }
+
+  /* .overlay {
+    position: absolute;
+    inset: 0;
+    background: hsl(270, 73%, 55%);
+    z-index: -1;
+  } */
 }
 
 /* js functionality */
@@ -318,7 +322,7 @@ img {
     left: -2rem;
   }
 
-  .login-mobile {
+  .logins {
     right: -12rem;
     align-items: center;
     border: none;
@@ -328,7 +332,11 @@ img {
     flex-direction: row;
   }
 
-  .login .btn {
+  .logins a {
+    color: var(--White);
+  }
+
+  .logins .btn {
     margin: 0;
   }
 
@@ -378,7 +386,7 @@ img {
 
   /* styling sections */
   .sections > h2 {
-    margin: 3rem 0;
+    margin: 10rem 0 5rem;
   }
 
   :is(.section, .articles) h2 {
@@ -476,13 +484,16 @@ img {
     text-align: left;
   }
 
+  .sections > h2 {
+    margin: 10rem 0 3rem;
+  }
+
   .article1 {
     flex-direction: row-reverse;
     padding-left: 10rem;
   }
 
   .article2 {
-    border: var(--border);
     margin: 1rem 0 10rem;
   }
 
