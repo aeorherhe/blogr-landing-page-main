@@ -176,6 +176,13 @@ img {
     margin: 1rem 0;
     padding: 1rem 2rem;
     white-space: nowrap;
+    transition: var(--transition2);
+  }
+
+  .logins .btn:hover {
+    background: var(--White);
+    color: var(--Light-red-CTA-text);
+    outline: 2px solid var(--Light-red-CTA-text);
   }
 
   .desktop-img {
@@ -207,13 +214,6 @@ img {
   .arrow-down path {
     stroke: var(--Light-red);
   }
-
-  /* .overlay {
-    position: absolute;
-    inset: 0;
-    background: hsl(270, 73%, 55%);
-    z-index: -1;
-  } */
 }
 
 /* js functionality */
@@ -338,6 +338,14 @@ img {
 
   .logins .btn {
     margin: 0;
+    background: var(--White);
+    color: var(--Light-red-CTA-text);
+    /* transition: var(--transition); */
+  }
+
+  .logins .btn:hover {
+    background: var(--Very-light-red-CTA-hover-background);
+    color: var(--White);
   }
 
   .hero {
@@ -361,6 +369,7 @@ img {
     margin: 3rem 1rem;
     outline: none;
     padding: 1rem 1.5rem;
+    transition: var(--transition2);
   }
 
   .free-trial {
